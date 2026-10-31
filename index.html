@@ -69,11 +69,6 @@
             50% { transform: translateY(-15px) rotate(3deg); }
         }
 
-        @keyframes blink {
-            0%, 90%, 100% { transform: scaleY(1); }
-            95% { transform: scaleY(0.1); }
-        }
-
         @keyframes popOut {
             0% { transform: scale(1); opacity: 1; }
             50% { transform: scale(1.4); opacity: 0.8; }
@@ -82,11 +77,6 @@
 
         .animate-float {
             animation: floatSlow 4s ease-in-out infinite;
-        }
-
-        .eye-blink {
-            transform-origin: center;
-            animation: blink 4s infinite;
         }
 
         #bubbles-container {
@@ -202,30 +192,13 @@
                     </div>
                 </div>
 
+                <!-- Foto 1: gabfono(2).jpg -->
                 <div class="lg:col-span-5 relative flex justify-center">
                     <div class="absolute inset-0 bg-cartoonCyan rounded-full border-cartoon-thick shadow-cartoon-lg rotate-3 transform scale-95 -z-10"></div>
                     <div class="bg-white border-cartoon-thick rounded-3xl p-6 shadow-cartoon-lg text-center relative w-full max-w-md animate-float">
                         
                         <div class="relative w-full h-64 bg-cartoonBg rounded-2xl border-cartoon overflow-hidden flex items-center justify-center mb-4">
-                            <svg class="w-48 h-48" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="100" cy="125" r="55" fill="#FFBD59" stroke="#2D2B3A" stroke-width="5"/>
-                                <circle cx="55" cy="80" r="22" fill="#FFBD59" stroke="#2D2B3A" stroke-width="5"/>
-                                <circle cx="55" cy="80" r="12" fill="#FF914D"/>
-                                <circle cx="145" cy="80" r="22" fill="#FFBD59" stroke="#2D2B3A" stroke-width="5"/>
-                                <circle cx="145" cy="80" r="12" fill="#FF914D"/>
-                                <circle cx="100" cy="100" r="48" fill="#FFBD59" stroke="#2D2B3A" stroke-width="5"/>
-                                <ellipse cx="100" cy="110" rx="20" ry="15" fill="#FFF" stroke="#2D2B3A" stroke-width="4"/>
-                                <ellipse cx="100" cy="103" rx="8" ry="6" fill="#2D2B3A"/>
-                                <g class="eye-blink">
-                                    <circle cx="82" cy="92" r="6" fill="#2D2B3A"/>
-                                    <circle cx="118" cy="92" r="6" fill="#2D2B3A"/>
-                                    <circle cx="84" cy="90" r="2" fill="#FFF"/>
-                                    <circle cx="120" cy="90" r="2" fill="#FFF"/>
-                                </g>
-                                <circle cx="72" cy="108" r="7" fill="#FF66C4" opacity="0.6"/>
-                                <circle cx="128" cy="108" r="7" fill="#FF66C4" opacity="0.6"/>
-                                <path d="M 92 115 Q 100 128 108 115 Z" fill="#FF66C4" stroke="#2D2B3A" stroke-width="3"/>
-                            </svg>
+                            <img src="gabfono(2).jpg" alt="Dra. Gabrielle" class="w-full h-full object-cover">
                         </div>
 
                         <div class="bg-cartoonYellow border-cartoon rounded-2xl p-3 shadow-cartoon-sm relative -mt-8 mx-2 z-10">
@@ -261,7 +234,7 @@
         </div>
     </section>
 
-    <!-- SOBRE A FONOAUDIÓLOGA -->
+    <!-- SOBRE A FONOAUDIÓLOGA (FOTO FINAL: gabfono.jpg) -->
     <section id="sobre" class="py-16 px-4">
         <div class="container mx-auto max-w-5xl">
             <div class="bg-white border-cartoon-thick rounded-3xl p-8 md:p-12 shadow-cartoon-lg relative">
@@ -275,18 +248,7 @@
                     <div class="md:col-span-5 text-center">
                         <div class="relative inline-block">
                             <div class="w-56 h-56 md:w-64 md:h-64 bg-cartoonYellow border-cartoon-thick rounded-full overflow-hidden shadow-cartoon mx-auto flex items-center justify-center">
-                                <svg class="w-full h-full p-2" viewBox="0 0 200 200" fill="none">
-                                    <circle cx="100" cy="100" r="90" fill="#FFDE59"/>
-                                    <path d="M 40 100 C 40 30, 160 30, 160 100 C 160 110, 150 140, 140 140 C 130 110, 70 110, 60 140 C 50 140, 40 110, 40 100 Z" fill="#8C52FF" stroke="#2D2B3A" stroke-width="4"/>
-                                    <ellipse cx="100" cy="105" rx="42" ry="45" fill="#FFE0BD" stroke="#2D2B3A" stroke-width="4"/>
-                                    <path d="M 58 85 Q 100 65 142 85 Q 100 75 58 85 Z" fill="#8C52FF" stroke="#2D2B3A" stroke-width="3"/>
-                                    <circle cx="82" cy="100" r="5" fill="#2D2B3A"/>
-                                    <circle cx="118" cy="100" r="5" fill="#2D2B3A"/>
-                                    <path d="M 85 120 Q 100 135 115 120" stroke="#2D2B3A" stroke-width="4" stroke-linecap="round" fill="none"/>
-                                    <circle cx="82" cy="100" r="14" stroke="#2D2B3A" stroke-width="3" fill="none"/>
-                                    <circle cx="118" cy="100" r="14" stroke="#2D2B3A" stroke-width="3" fill="none"/>
-                                    <line x1="96" y1="100" x2="104" y2="100" stroke="#2D2B3A" stroke-width="3"/>
-                                </svg>
+                                <img src="gabfono.jpg" alt="Dra. Gabrielle Fonoaudióloga" class="w-full h-full object-cover">
                             </div>
                             <div class="bg-cartoonGreen border-cartoon text-cartoonDark font-title font-bold text-sm px-4 py-1.5 rounded-full shadow-cartoon-sm mt-3 inline-block">
                                 Fonoaudióloga Infantil
@@ -376,7 +338,7 @@
         </div>
     </section>
 
-    <!-- FOOTER / CONTATO -->
+<!-- FOOTER / CONTATO -->
     <footer id="contato" class="bg-cartoonDark text-white pt-16 pb-8 border-t-4 border-cartoon">
         <div class="container mx-auto max-w-5xl px-4">
             
