@@ -56,7 +56,6 @@
             font-family: 'Fredoka', sans-serif;
         }
 
-        /* Bordas estilo desenho animado HQ */
         .border-cartoon {
             border: 4px solid #2D2B3A;
         }
@@ -65,15 +64,9 @@
             border: 6px solid #2D2B3A;
         }
 
-        /* Animações Flutuantes */
         @keyframes floatSlow {
             0%, 100% { transform: translateY(0px) rotate(0deg); }
             50% { transform: translateY(-15px) rotate(3deg); }
-        }
-
-        @keyframes floatMedium {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(-4deg); }
         }
 
         @keyframes blink {
@@ -91,16 +84,11 @@
             animation: floatSlow 4s ease-in-out infinite;
         }
 
-        .animate-float-fast {
-            animation: floatMedium 3s ease-in-out infinite;
-        }
-
         .eye-blink {
             transform-origin: center;
             animation: blink 4s infinite;
         }
 
-        /* Container de bolhas interativas */
         #bubbles-container {
             position: fixed;
             top: 0;
@@ -132,7 +120,6 @@
             pointer-events: none;
         }
 
-        /* Partículas de água ao estourar */
         .drop-particle {
             position: absolute;
             pointer-events: none;
@@ -157,7 +144,6 @@
     <!-- NAVBAR CARTUNADA -->
     <nav class="sticky top-4 z-50 container mx-auto px-4">
         <div class="bg-white border-cartoon rounded-full px-6 py-3 shadow-cartoon flex items-center justify-between">
-            <!-- Logo -->
             <a href="#" class="flex items-center gap-3">
                 <div class="w-12 h-12 bg-cartoonYellow border-cartoon rounded-full flex items-center justify-center font-title font-bold text-2xl text-cartoonDark shadow-cartoon-sm hover:rotate-12 transition-transform">
                     G
@@ -168,15 +154,12 @@
                 </div>
             </a>
 
-            <!-- Menu Links (Desktop) -->
             <div class="hidden md:flex items-center gap-6 font-title text-lg font-bold">
                 <a href="#sobre" class="hover:text-cartoonBlue transition-colors">Sobre Mim</a>
                 <a href="#servicos" class="hover:text-cartoonRose transition-colors">Tratamentos</a>
-                <a href="#depoimentos" class="hover:text-cartoonPurple transition-colors">Depoimentos</a>
                 <a href="#contato" class="hover:text-cartoonGreen transition-colors">Contato</a>
             </div>
 
-            <!-- Botão de Ação / WhatsApp -->
             <a href="https://wa.me/5513991571663" target="_blank" class="bg-cartoonGreen hover:bg-green-400 text-cartoonDark font-title font-bold px-5 py-2 rounded-full border-cartoon shadow-cartoon-sm hover:shadow-cartoon hover:-translate-y-0.5 active:translate-y-0 transition-all flex items-center gap-2">
                 <i data-lucide="message-circle" class="w-5 h-5 fill-current"></i>
                 <span class="hidden sm:inline">Agendar Consulta</span>
@@ -189,7 +172,6 @@
         <div class="container mx-auto max-w-6xl">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 
-                <!-- Conteúdo Esquerda -->
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                     <div class="inline-block bg-cartoonYellow border-cartoon rounded-full px-4 py-2 font-title font-bold text-sm text-cartoonDark shadow-cartoon-sm animate-bounce">
                         🎈 Atendimento On-line e Presencial!
@@ -200,7 +182,7 @@
                     </h1>
 
                     <p class="text-xl md:text-2xl text-slate-700 font-bold max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                        Especializada em transtornos de linguagem e estimulação precoce[span_10](start_span)[span_10](end_span)[span_11](start_span)[span_11](end_span). Transformamos o aprendizado da fala em uma grande brincadeira!
+                        Especializada em transtornos de linguagem e estimulação precoce[span_3](start_span)[span_3](end_span)[span_4](start_span)[span_4](end_span). Transformamos o aprendizado da fala em uma grande brincadeira!
                     </p>
 
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
@@ -215,12 +197,11 @@
                     </div>
 
                     <div class="pt-6 flex items-center justify-center lg:justify-start gap-4 text-slate-600 font-bold text-sm flex-wrap">
-                        <span class="flex items-center gap-1"><i data-lucide="check-circle-2" class="text-cartoonGreen w-5 h-5"></i> Atendimento Presencial e On-line[span_12](start_span)[span_12](end_span)</span>
-                        <span class="flex items-center gap-1"><i data-lucide="check-circle-2" class="text-cartoonGreen w-5 h-5"></i> Instagram @gabfono[span_13](start_span)[span_13](end_span)</span>
+                        <span class="flex items-center gap-1"><i data-lucide="check-circle-2" class="text-cartoonGreen w-5 h-5"></i> Atendimento Presencial e On-line[span_5](start_span)[span_5](end_span)</span>
+                        <span class="flex items-center gap-1"><i data-lucide="check-circle-2" class="text-cartoonGreen w-5 h-5"></i> Instagram @gabfono[span_6](start_span)[span_6](end_span)</span>
                     </div>
                 </div>
 
-                <!-- Ilustração Direita / Mascote SVG -->
                 <div class="lg:col-span-5 relative flex justify-center">
                     <div class="absolute inset-0 bg-cartoonCyan rounded-full border-cartoon-thick shadow-cartoon-lg rotate-3 transform scale-95 -z-10"></div>
                     <div class="bg-white border-cartoon-thick rounded-3xl p-6 shadow-cartoon-lg text-center relative w-full max-w-md animate-float">
@@ -252,8 +233,8 @@
                         </div>
 
                         <div class="mt-4 flex justify-between items-center px-2">
-                            <span class="font-title font-bold text-slate-700 text-sm">Dra. Gabrielle (@gabfono)[span_14](start_span)[span_14](end_span)</span>
-                            <span class="bg-cartoonGreen text-cartoonDark border-cartoon px-3 py-0.5 rounded-full text-xs font-bold">Fono Infantil[span_15](start_span)[span_15](end_span)</span>
+                            <span class="font-title font-bold text-slate-700 text-sm">Dra. Gabrielle (@gabfono)[span_7](start_span)[span_7](end_span)</span>
+                            <span class="bg-cartoonGreen text-cartoonDark border-cartoon px-3 py-0.5 rounded-full text-xs font-bold">Fono Infantil[span_8](start_span)[span_8](end_span)</span>
                         </div>
                     </div>
                 </div>
@@ -267,15 +248,15 @@
         <div class="container mx-auto px-4 flex flex-wrap justify-around gap-6 text-center font-title text-xl font-bold">
             <div class="flex items-center gap-3">
                 <span class="bg-cartoonYellow text-cartoonDark p-2 rounded-xl border-cartoon">💻</span>
-                <span>Atendimento On-line e Presencial[span_16](start_span)[span_16](end_span)</span>
+                <span>Atendimento On-line e Presencial[span_9](start_span)[span_9](end_span)</span>
             </div>
             <div class="flex items-center gap-3">
                 <span class="bg-cartoonRose text-white p-2 rounded-xl border-cartoon">🧩</span>
-                <span>Transtornos de Linguagem[span_17](start_span)[span_17](end_span)</span>
+                <span>Transtornos de Linguagem[span_10](start_span)[span_10](end_span)</span>
             </div>
             <div class="flex items-center gap-3">
                 <span class="bg-cartoonGreen text-cartoonDark p-2 rounded-xl border-cartoon">🧸</span>
-                <span>Estimulação Precoce[span_18](start_span)[span_18](end_span)</span>
+                <span>Estimulação Precoce[span_11](start_span)[span_11](end_span)</span>
             </div>
         </div>
     </section>
@@ -308,7 +289,7 @@
                                 </svg>
                             </div>
                             <div class="bg-cartoonGreen border-cartoon text-cartoonDark font-title font-bold text-sm px-4 py-1.5 rounded-full shadow-cartoon-sm mt-3 inline-block">
-                                Fonoaudióloga Infantil[span_19](start_span)[span_19](end_span)
+                                Fonoaudióloga Infantil[span_12](start_span)[span_12](end_span)
                             </div>
                         </div>
                     </div>
@@ -318,20 +299,20 @@
                             Olá! Eu sou a <span class="text-cartoonBlue">Dra. Gabrielle</span>! 💛
                         </h2>
                         <p class="text-lg md:text-xl font-bold text-slate-700 leading-relaxed">
-                            Sou fonoaudióloga infantil[span_20](start_span)[span_20](end_span), especializada em transtornos de linguagem[span_21](start_span)[span_21](end_span) e estimulação precoce[span_22](start_span)[span_22](end_span). Meu objetivo é acompanhar o desenvolvimento dos pequenos com muito carinho e ludicidade.
+                            Sou fonoaudióloga infantil[span_13](start_span)[span_13](end_span), especializada em transtornos de linguagem[span_14](start_span)[span_14](end_span) e estimulação precoce[span_15](start_span)[span_15](end_span). Meu objetivo é acompanhar o desenvolvimento dos pequenos com muito carinho e ludicidade.
                         </p>
                         <p class="text-base md:text-lg text-slate-600 font-bold">
-                            Ofereço atendimentos tanto na modalidade on-line quanto presencial[span_23](start_span)[span_23](end_span). Entre em contato para saber mais sobre as avaliações e acompanhamentos!
+                            Ofereço atendimentos tanto na modalidade on-line quanto presencial[span_16](start_span)[span_16](end_span). Entre em contato para saber mais sobre as avaliações e acompanhamentos!
                         </p>
 
                         <div class="grid grid-cols-2 gap-3 pt-2">
                             <div class="bg-cartoonBg border-cartoon p-3 rounded-2xl flex items-center gap-2">
                                 <span class="text-2xl">🎓</span>
-                                <span class="font-title font-bold text-xs md:text-sm text-cartoonDark">Especialista em Linguagem[span_24](start_span)[span_24](end_span)</span>
+                                <span class="font-title font-bold text-xs md:text-sm text-cartoonDark">Especialista em Linguagem[span_17](start_span)[span_17](end_span)</span>
                             </div>
                             <div class="bg-cartoonBg border-cartoon p-3 rounded-2xl flex items-center gap-2">
                                 <span class="text-2xl">🧸</span>
-                                <span class="font-title font-bold text-xs md:text-sm text-cartoonDark">Estimulação Precoce[span_25](start_span)[span_25](end_span)</span>
+                                <span class="font-title font-bold text-xs md:text-sm text-cartoonDark">Estimulação Precoce[span_18](start_span)[span_18](end_span)</span>
                             </div>
                         </div>
                     </div>
@@ -341,7 +322,7 @@
         </div>
     </section>
 
-    <!-- SERVIÇOS / TRATAMENTOS -->
+<!-- SERVIÇOS / TRATAMENTOS -->
     <section id="servicos" class="py-16 px-4 bg-cartoonBg">
         <div class="container mx-auto max-w-6xl">
             
@@ -362,7 +343,7 @@
                     <div>
                         <h3 class="font-title font-bold text-2xl text-cartoonDark mb-2">Transtornos de Linguagem</h3>
                         <p class="font-bold text-slate-600 text-base mb-4">
-                            Especializada em identificar e tratar dificuldades e atrasos no desenvolvimento da comunicação oral[span_26](start_span)[span_26](end_span).
+                            Especializada em identificar e tratar dificuldades e atrasos no desenvolvimento da comunicação oral[span_19](start_span)[span_19](end_span).
                         </p>
                     </div>
                 </div>
@@ -374,7 +355,7 @@
                     <div>
                         <h3 class="font-title font-bold text-2xl text-cartoonDark mb-2">Estimulação Precoce</h3>
                         <p class="font-bold text-slate-600 text-base mb-4">
-                            Trabalho voltado para bebês e crianças pequenas, estimulando marcos importantes do desenvolvimento[span_27](start_span)[span_27](end_span).
+                            Trabalho voltado para bebês e crianças pequenas, estimulando marcos importantes do desenvolvimento[span_20](start_span)[span_20](end_span).
                         </p>
                     </div>
                 </div>
@@ -386,75 +367,8 @@
                     <div>
                         <h3 class="font-title font-bold text-2xl text-cartoonDark mb-2">Presencial & On-line</h3>
                         <p class="font-bold text-slate-600 text-base mb-4">
-                            Flexibilidade de atendimento no consultório ou no conforto da sua casa, conforme a sua necessidade[span_28](start_span)[span_28](end_span).
+                            Flexibilidade de atendimento no consultório ou no conforto da sua casa, conforme a sua necessidade[span_21](start_span)[span_21](end_span).
                         </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- DEPOIMENTOS -->
-    <section id="depoimentos" class="py-16 px-4">
-        <div class="container mx-auto max-w-5xl">
-            <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
-                <span class="bg-cartoonRose text-white font-title font-bold px-4 py-1.5 rounded-full border-cartoon text-sm shadow-cartoon-sm inline-block">
-                    Depoimentos Acolhedores
-                </span>
-                <h2 class="font-title font-bold text-4xl md:text-5xl text-cartoonDark">O que os Papais Dizem ❤️</h2>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <div class="relative">
-                    <div class="bg-white border-cartoon-thick rounded-3xl p-6 shadow-cartoon mb-6 relative">
-                        <p class="font-bold text-slate-700 text-base leading-relaxed">
-                            "A Dra. Gabrielle é maravilhosa! Meu filho melhorou muito a fala e adora as sessões. Atendimento impecável!"
-                        </p>
-                        <div class="absolute -bottom-4 left-8 w-0 h-0 border-l-[15px] border-l-transparent border-r-[15px] border-r-transparent border-t-[18px] border-t-cartoonDark"></div>
-                        <div class="absolute -bottom-3 left-8.5 w-0 h-0 border-l-[13px] border-l-transparent border-r-[13px] border-r-transparent border-t-[16px] border-t-white"></div>
-                    </div>
-                    <div class="flex items-center gap-3 px-4">
-                        <div class="w-12 h-12 bg-cartoonYellow border-cartoon rounded-full flex items-center justify-center font-bold text-xl">👩</div>
-                        <div>
-                            <h4 class="font-title font-bold text-cartoonDark text-lg">Mariana Silva</h4>
-                            <p class="text-xs font-bold text-slate-500">Mãe de paciente</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="relative">
-                    <div class="bg-white border-cartoon-thick rounded-3xl p-6 shadow-cartoon mb-6 relative">
-                        <p class="font-bold text-slate-700 text-base leading-relaxed">
-                            "Excelente profissional. Muito atenciosa com a estimulação precoce do meu bebê. Recomendo de olhos fechados[span_29](start_span)[span_29](end_span)!"
-                        </p>
-                        <div class="absolute -bottom-4 left-8 w-0 h-0 border-l-[15px] border-l-transparent border-r-[15px] border-r-transparent border-t-[18px] border-t-cartoonDark"></div>
-                        <div class="absolute -bottom-3 left-8.5 w-0 h-0 border-l-[13px] border-l-transparent border-r-[13px] border-r-transparent border-t-[16px] border-t-white"></div>
-                    </div>
-                    <div class="flex items-center gap-3 px-4">
-                        <div class="w-12 h-12 bg-cartoonCyan border-cartoon rounded-full flex items-center justify-center font-bold text-xl text-white">👨</div>
-                        <div>
-                            <h4 class="font-title font-bold text-cartoonDark text-lg">Ricardo Alves</h4>
-                            <p class="text-xs font-bold text-slate-500">Pai de paciente</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="relative">
-                    <div class="bg-white border-cartoon-thick rounded-3xl p-6 shadow-cartoon mb-6 relative">
-                        <p class="font-bold text-slate-700 text-base leading-relaxed">
-                            "O atendimento on-line nos ajudou muito na rotina e os resultados foram incríveis[span_30](start_span)[span_30](end_span)."
-                        </p>
-                        <div class="absolute -bottom-4 left-8 w-0 h-0 border-l-[15px] border-l-transparent border-r-[15px] border-r-transparent border-t-[18px] border-t-cartoonDark"></div>
-                        <div class="absolute -bottom-3 left-8.5 w-0 h-0 border-l-[13px] border-l-transparent border-r-[13px] border-r-transparent border-t-[16px] border-t-white"></div>
-                    </div>
-                    <div class="flex items-center gap-3 px-4">
-                        <div class="w-12 h-12 bg-cartoonRose border-cartoon rounded-full flex items-center justify-center font-bold text-xl text-white">👩‍🦰</div>
-                        <div>
-                            <h4 class="font-title font-bold text-cartoonDark text-lg">Camila Torres</h4>
-                            <p class="text-xs font-bold text-slate-500">Mãe de paciente</p>
-                        </div>
                     </div>
                 </div>
 
@@ -485,19 +399,19 @@
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 text-center md:text-left font-bold">
                 <div class="space-y-2">
                     <h4 class="font-title text-cartoonYellow text-xl">📍 Localização</h4>
-                    <p class="text-slate-300 text-sm">Avenida Leomil 375, sala 55[span_31](start_span)[span_31](end_span)</p>
-                    <p class="text-slate-300 text-sm">Atendimento Presencial e On-line[span_32](start_span)[span_32](end_span)</p>
+                    <p class="text-slate-300 text-sm">Avenida Leomil 375, sala 55[span_22](start_span)[span_22](end_span)</p>
+                    <p class="text-slate-300 text-sm">Atendimento Presencial e On-line[span_23](start_span)[span_23](end_span)</p>
                 </div>
                 <div class="space-y-2">
-                    <h4 class="font-title text-cartoonCyan text-xl">⏰ Horários & Convênio</h4>
-                    <p class="text-slate-300 text-sm">Segunda a Sábado: Das 9h às 18h[span_33](start_span)[span_33](end_span)</p>
-                    <p class="text-slate-300 text-sm">Pagamento via PIX / Transferência[span_34](start_span)[span_34](end_span)</p>
-                    <p class="text-slate-300 text-sm text-cartoonRose">Não trabalhamos com convênio[span_35](start_span)[span_35](end_span)</p>
+                    <h4 class="font-title text-cartoonCyan text-xl">⏰ Horários & Pagamento</h4>
+                    <p class="text-slate-300 text-sm">Segunda a Sábado: Das 9h às 18h[span_24](start_span)[span_24](end_span)</p>
+                    <p class="text-slate-300 text-sm">Pagamento via PIX / Transferência[span_25](start_span)[span_25](end_span)</p>
+                    <p class="text-slate-300 text-sm text-cartoonRose font-extrabold">⚠️ Não trabalhamos com convênio[span_26](start_span)[span_26](end_span)</p>
                 </div>
                 <div class="space-y-2">
                     <h4 class="font-title text-cartoonGreen text-xl">📞 Fale Conosco</h4>
-                    <p class="text-slate-300 text-sm">WhatsApp / Consultório: (13) 99157-1663[span_36](start_span)[span_36](end_span)</p>
-                    <p class="text-slate-300 text-sm">Instagram: @gabfono[span_37](start_span)[span_37](end_span)</p>
+                    <p class="text-slate-300 text-sm">WhatsApp / Consultório: (13) 99157-1663[span_27](start_span)[span_27](end_span)</p>
+                    <p class="text-slate-300 text-sm">Instagram: @gabfono[span_28](start_span)[span_28](end_span)</p>
                 </div>
             </div>
 
